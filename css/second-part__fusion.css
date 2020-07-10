@@ -1,0 +1,155 @@
+.second-part__fusion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 15px 0;
+}
+
+.second-part__fusion p {
+    font-weight: 500;
+    color: #525252;
+    margin-bottom: 15.6px;
+}
+
+.second-part__title {
+    height: 165px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-part__fusion h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.second-part__line {
+    
+    border: 2px solid orange;
+    width: 10%;
+    height: 2px;
+}
+
+.second-part__card-container {
+   display: flex; 
+   width: 75%;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.second-part__card {
+    padding: 0 15px;
+    width: 33%;
+}
+
+
+.child {
+    width: 100%;
+    height: 15vw;
+    background-color: black; /* fallback color */
+    background-size: cover;
+    transition: all .5s;
+}
+
+.child1 {
+    background-image: url("https://avada.theme-fusion.com/forum/wp-content/uploads/sites/51/2015/10/post_feat_img_25-700x441.jpg"); 
+}
+
+.child2 {
+    background-image: url("https://avada.theme-fusion.com/forum/wp-content/uploads/sites/51/2015/10/post_feat_img_24-700x441.jpg"); 
+}
+
+.child3 {
+    background-image: url("https://avada.theme-fusion.com/forum/wp-content/uploads/sites/51/2015/10/post_feat_img_23-700x441.jpg"); 
+}
+
+.child:hover {
+    background-position: center; 
+}
+
+.second-part__card h4 {
+    margin: 15px 0px 3px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+span {
+    margin: 0 0 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #999;
+    
+}
+
+.comment,.title {
+    color: black;
+}
+
+.comment:hover, .title:hover {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.content {
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #888;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+@media only screen and (max-width: 1500px){
+    .second-part__card-container {
+        margin: 0 auto;
+        width: 100%;
+        transition: all 0.5s;
+    }
+
+    .child {
+        height: 20vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .second-part__fusion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 15px 0;
+    }
+
+    .second-part__card-container {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+
+    .second-part__card {
+        padding: 0 15px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .child {
+        height: 60vw;
+    }
+
+    .second-part__title {
+        height: 140px;
+        width: 100%;
+        
+    }
+
+    .second-part__fusion h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}

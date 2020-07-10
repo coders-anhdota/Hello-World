@@ -1,0 +1,40 @@
+.first-part__fusion {
+    padding: 125px 30px 100px;
+    background-color: #f2f2f2;
+    border-color: #eaeaea;
+    border-top-style: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.first-part__paragraph {
+    padding: 0px 14%;
+    width: 1240px;
+    height: auto;
+    background-size: cover;
+}
+
+.first-part__paragraph p {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.first-part__paragraph strong {
+    font-weight: 700;  
+    letter-spacing: 6px  
+}
+
+.first-part__paragraph .first-part__paragraph-p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888
+}
+
+
+@media only screen and (max-width: 680px){
+    .first-part__paragraph {
+        width: 100%;
+        transition: all 0.5s;
+    }
+}

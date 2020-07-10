@@ -1,0 +1,232 @@
+
+.header {
+    height: 100px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 30px;
+    background-color: rgba(37,169,189,0.9);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.header-wrapper {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.header-wrapper__destop {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+}
+
+.header-wrapper__mobile {
+    display: none;
+}
+
+.header-wrapper__menu {
+    display: flex;
+    list-style-type: none;  
+    align-items: center;
+    margin: 0; 
+    height: 100%; 
+    
+}
+.header-wrapper__li {     
+    padding: 0 50px 0 0;
+    height: 100%;   
+}
+
+
+
+.header-wrapper__li a {
+    display: flex;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    height: 100%;
+    align-items: center; 
+
+}
+
+.header-wrapper__li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header-wrapper__li span {
+    background-color: black;
+    padding: 10px 22px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+.header-wrapper__search {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.fa-search {
+    color:white;   
+}
+
+.header-wrapper__hassub {
+    width: 110px;
+    position: relative;
+}
+
+.header-wrapper__join {
+    width: 160px;
+    position: relative;
+}
+
+.header-wrapper__hassub:hover .header-wrapper__submenu {   
+    display: block;
+}
+
+.header-wrapper__join:hover .header-wrapper__submenu {
+    display: block;
+}
+
+.header-wrapper__hassub:hover::before, .header-wrapper__join:hover::before {
+    height: 30px;
+    position: absolute;
+    background: 0 0;
+    width: 100%;
+    display: block;
+    content: "";
+    top: 100px
+}
+
+.header-wrapper__join span {
+    transition: all 0.3s;
+}
+
+.header-wrapper__join span:hover{
+    background-color: rgb(255, 141, 97)
+}
+
+.header-wrapper__submenu {
+    background-color: rgb(37,169,189);
+    list-style-type: none;
+    width: 200px;
+    display: none;
+    margin-top: 30px;
+}
+
+.header-wrapper__submenu .header-wrapper__subchild {
+    padding: 12px 20px;
+    height: 50px; 
+}
+
+.header-wrapper__subchild:hover {
+    background-color: rgba(10, 10, 10, 0.08);
+}
+
+
+@media only screen and (max-width: 1500px){
+    .header-wrapper {
+        margin: 0 auto;
+        width: 100%;
+        transition: all 0.5s;
+    }
+}
+
+@media only screen and (max-width: 1140px){
+    .header {
+        padding: 20px 30px;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        transition: all 0.5s;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+       
+    }
+    
+    .header-wrapper__destop {
+        display: none;
+    }
+
+    .header-wrapper__mobile {
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        display: block;
+        margin-top: 1rem;
+        
+    }
+
+    .header-wrapper__mobile--drop-down {
+        display: flex;
+        width: 50px;
+        height: 100%;
+        right: 0;
+        border-left: 1px solid rgba(10, 10, 10, 0.1);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-bars {
+        color: #ff8d61;
+    }
+
+    .header-wrapper__mobile--list-menu {
+        list-style-type: none;
+        width: 100%;
+        display: none;
+        margin: 0;
+        
+        
+    }
+
+    .header-wrapper__mobile--li {
+        height: 42px;
+        border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+        transition: all 10s;
+    }
+
+    .header-wrapper__mobile--li a {
+        display: flex;
+        padding: 1px 6px;
+        height: 100%;
+        width: 100%;
+        align-items: center;  
+        
+    } 
+
+    .header-wrapper__mobile--li span {
+        color: black;
+    }
+
+    .header-wrapper__mobile--li:hover a {
+        text-decoration: none;
+        background-color: rgba(10, 10, 10, 0.1);
+        
+    } 
+
+    .header-wrapper__mobile:hover .header-wrapper__mobile--list-menu {
+        display: inline-block;
+     }
+
+    .header-wrapper__fusion {
+        padding: 1px 6px;
+        display: flex;
+        justify-content: space-between;
+        height: 42px;
+        align-items: center;
+        border: 1px solid rgb(255, 141, 97);
+    }
+
+
+}
